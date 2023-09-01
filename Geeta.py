@@ -7,6 +7,10 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import Chroma
 from langchain import HuggingFaceHub
 from langchain.chains import RetrievalQA
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 # load huggingface api key
 os.environ["HUGGINGFACE_HUB_TOKEN"] = st.secrets["HUGGINGFACE_HUB_TOKEN"]

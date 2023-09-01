@@ -4,4 +4,4 @@ sentence-transformers
 pypdf
 huggingface_hub
 chromadb
-sqlite3
+db-sqlite3

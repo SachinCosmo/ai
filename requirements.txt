@@ -2,4 +2,5 @@ streamlit
 langchain
 sentence-transformers
 pypdf
-huggingfacehub
+huggingface_hub
+chromadb

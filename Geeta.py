@@ -9,7 +9,7 @@ from langchain import HuggingFaceHub
 from langchain.chains import RetrievalQA
 
 # load huggingface api key
-os.environ["HUGGINGFACE_HUB_TOKEN"] = "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"
+os.environ["HUGGINGFACE_HUB_TOKEN"] = st.secrets["HUGGINGFACE_HUB_TOKEN"]
 
 # use streamlit file uploader to ask user for file
 # file = st.file_uploader("Upload PDF")

@@ -38,4 +38,5 @@ from langchain.schema import retriever
 retireval_chain = RetrievalQA.from_chain_type(llm, chain_type="stuff", retriever=doc_search.as_retriever())
 
 if query := st.chat_input("Enter a question: "):
-  st.chat_message(retireval_chain.run(query))
+  with st.chat_message("assistant"):
+    st.write(retireval_chain.run(query))

@@ -14,6 +14,7 @@ os.environ["HUGGINGFACE_HUB_TOKEN"] = st.secrets["HUGGINGFACE_HUB_TOKEN"]
 # use streamlit file uploader to ask user for file
 # file = st.file_uploader("Upload PDF")
 
+
 path = "https://vedpuran.files.wordpress.com/2013/04/455_gita_roman.pdf"
 loader = PyPDFLoader(path)
 pages = loader.load()
